@@ -19,7 +19,7 @@ class TestGoToPersonalAccount:
 # нажимаем кнопку "Войти"        
         main_page.find_element(*LoginAccountLocators.SUBMIT_LOGIN).click() 
         
-# ожидаем появления кнопки "Оформить заказ"
+# ожидаем появления кнопки "Оформить заказ".
         wait = WebDriverWait(main_page, 5)
         order_button = wait.until(EC.visibility_of_element_located(LoginAccountLocators.TITLE_ORDER))
         assert order_button.is_displayed()

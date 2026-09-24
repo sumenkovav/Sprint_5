@@ -52,7 +52,7 @@ class LogoutLocators:
     LOGOUT_BUTTON = (By.XPATH, "//button[text()='Выход']")               # кнопка выход из личного кабинета
 
 class ConstructorLocators:
-#Локаторы для перехода к разделам булки, соусы, начинки
+#Локаторы для перехода к разделам булки, соусы, начинки.
     BUNS_TAB = (By.XPATH, "//span[text()='Булки']")                # вкладка «Булки»
     SAUCES_TAB = (By.XPATH, "//span[text()='Соусы']")              # вкладка «Соусы»
     FILLINGS_TAB = (By.XPATH, "//span[text()='Начинки']")         # вкладка «Начинки»

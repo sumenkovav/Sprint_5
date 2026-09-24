@@ -19,3 +19,4 @@
 Для работы применены фикстуры в файле conftest.py, локаторы в файле locators.py, а также валидные данные в файле test_data.py
 
 Требования: библиотеки: Selenium, pytest, браузер Google Chrome.
+

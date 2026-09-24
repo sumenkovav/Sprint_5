@@ -32,7 +32,7 @@ def main_page(driver: WebDriver):
     return driver
 
 
-# авторизация
+# авторизация.
 @pytest.fixture 
 def authorized_main_page(main_page: WebDriver):
     main_page.find_element(By.XPATH, "//button[text()='Войти в аккаунт']").click()
