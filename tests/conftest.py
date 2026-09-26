@@ -17,12 +17,22 @@ def driver():
     driver.quit()
 
 # генерация валидных данных пользователя
+def generate_unique_email():
+    #Генерирует уникальный email для регистрации
+    prefix = "sumenkov_55kogorta"
+    random_number = random.randint(100, 999)
+    return f"{prefix}{random_number}@yandex.ru"
+
 @pytest.fixture
 def valid_user():
-    email = f"sumenkov_55kogorta{random.randint(100,999)}@yandex.ru"
-    name = "Александр"
-    password = "123456"
-    return {"name": name, "email": email, "password": password}
+    # Фикстура больше не делает сложную математику, она просто собирает данные
+    return {
+        "name": "Александр",
+        "email": generate_unique_email(),  # Вызываем нашу функцию
+        "password": "123456"
+    } 
+ 
+
 
 # открытие главной страницы
 @pytest.fixture
