@@ -3,6 +3,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from tests.locators import LogoutLocators
 
+
 class TestLogout:
     def test_logout_from_personal_account(self, authorized_main_page):  # проверяем выход по кнопке «Выйти»
         authorized_main_page.find_element(*LogoutLocators.PERSONAL_ACCOUNT_LINK).click()   # нажимаем личный кабинет

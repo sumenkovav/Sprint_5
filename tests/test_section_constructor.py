@@ -26,3 +26,4 @@ class TestConstructor:
         wait = WebDriverWait(authorized_main_page, 5)
         active_tab = wait.until(EC.visibility_of_element_located(ConstructorLocators.ACTIVE_FILLINGS_TAB))
         assert active_tab.is_displayed()
+        

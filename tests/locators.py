@@ -52,12 +52,12 @@ class LogoutLocators:
     LOGOUT_BUTTON = (By.XPATH, "//button[text()='Выход']")               # кнопка выход из личного кабинета
 
 class ConstructorLocators:
-#Локаторы для перехода к разделам булки, соусы, начинки
+#Локаторы для перехода к разделам булки, соусы, начинки.
     BUNS_TAB = (By.XPATH, "//span[text()='Булки']")                # вкладка «Булки»
     SAUCES_TAB = (By.XPATH, "//span[text()='Соусы']")              # вкладка «Соусы»
     FILLINGS_TAB = (By.XPATH, "//span[text()='Начинки']")         # вкладка «Начинки»
 
-    ACTIVE_BUNS_TAB = (By.XPATH, "//span[text()='Булки']/parent::div[contains(@class, 'tab_tab_type_current__2BEPc')]")        #локатор активного раздела булки
-    ACTIVE_SAUCES_TAB = (By.XPATH, "//span[text()='Соусы']/parent::div[contains(@class, 'tab_tab_type_current__2BEPc')]")      #локатор активного раздела соусы
-    ACTIVE_FILLINGS_TAB = (By.XPATH, "//span[text()='Начинки']/parent::div[contains(@class, 'tab_tab_type_current__2BEPc')]")  #локатор активного раздела начинки
+    ACTIVE_BUNS_TAB = (By.XPATH, "//span[text()='Булки']/parent::div[contains(@class, 'tab_tab_type_current')]")        #локатор активного раздела булки
+    ACTIVE_SAUCES_TAB = (By.XPATH, "//span[text()='Соусы']/parent::div[contains(@class, 'tab_tab_type_current')]")      #локатор активного раздела соусы
+    ACTIVE_FILLINGS_TAB = (By.XPATH, "//span[text()='Начинки']/parent::div[contains(@class, 'tab_tab_type_current')]")  #локатор активного раздела начинки
       

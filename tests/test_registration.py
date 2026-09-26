@@ -38,3 +38,4 @@ class TestRegistration:
 
         error_message = main_page.find_element(*RegistrationLocators.MESSAGE_ERROR)  # проверяем вывод сообщения об ошибке
         assert error_message.is_displayed()   
+        

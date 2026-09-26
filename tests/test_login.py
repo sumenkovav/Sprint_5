@@ -39,7 +39,7 @@ class TestLogin:
         order_button = wait.until(EC.visibility_of_element_located(LoginLocators.ORDER_BUTTON))
         assert order_button.is_displayed()
 
-# проверка входа через форму восстановления
+# проверка входа через форму восстановления.
     def test_login_from_password_recovery(self, main_page):  
         main_page.find_element(*LoginLocators.BUTTON_ENTER).click()   # нажимаем кнопку войти в аккаунт
         main_page.find_element(*LoginLocators.RECOVER_PASSWORD_LINK).click()   # нажимаем ссылку восстановить пароль
